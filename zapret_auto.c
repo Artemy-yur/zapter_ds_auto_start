@@ -4,7 +4,6 @@
 
 void start_alt(int alt)
 {
-    Sleep(3000);
     char command[256];
 
     if (alt == 0)
