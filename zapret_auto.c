@@ -9,11 +9,11 @@ void start_alt(int alt)
 
     if (alt == 0)
     {
-        sprintf(command, "cd /d \"C:\\Users\\Artemy\\Desktop\\zapret-discord-youtube-1.9.1 (2)\" && start \"\" \"general (ALT).bat\"");
+        sprintf(command, "cd /d \"C:\\Users\\Desktop\\zapret-discord-youtube-1.9.1 (2)\" && start \"\" \"general (ALT).bat\""); //тут надо путь для вашего файла
     }
     else
     {
-        sprintf(command, "cd /d \"C:\\Users\\Artemy\\Desktop\\zapret-discord-youtube-1.9.1 (2)\" && start \"\" \"general (ALT%d).bat\"", alt);
+        sprintf(command, "cd /d \"C:\\Users\\Desktop\\zapret-discord-youtube-1.9.1 (2)\" && start \"\" \"general (ALT%d).bat\"", alt);//тут надо путь для вашего файла
     }
 
     system(command);
@@ -23,7 +23,7 @@ void start_alt(int alt)
 int main(void)
 {
     int alt = 0;
-    FILE *cfg = fopen("C:\\Users\\Artemy\\Desktop\\zapret-discord-youtube-1.9.1 (2)\\config.txt", "r");
+    FILE *cfg = fopen("C:\\Users\\Desktop\\zapret-discord-youtube-1.9.1 (2)\\config.txt", "r");//тут надо путь для вашего файла
     if (cfg)
     {
         fscanf(cfg, "%d", &alt);
